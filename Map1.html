@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_086354a045d84502a36df00d2942d57e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_086354a045d84502a36df00d2942d57e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_086354a045d84502a36df00d2942d57e = L.map(
+                                  'map_086354a045d84502a36df00d2942d57e',
+                                  {center: [38.58,-99.09],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_f8db02451010497d97fc073aea9fdf85 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_086354a045d84502a36df00d2942d57e);
+
+        
+    
+            var feature_group_d316d7c205d643a18ad4868739a01ab0 = L.featureGroup(
+                ).addTo(map_086354a045d84502a36df00d2942d57e);
+        
+    
+
+            var marker_9028684664264e38b3e5d02510b8e68a = L.marker(
+                [33.6576478,-117.7474308],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_51dac8f848de47f4aac7ab8b760b63e7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9028684664264e38b3e5d02510b8e68a.setIcon(icon_51dac8f848de47f4aac7ab8b760b63e7);
+            
+    
+            var popup_3c8dd78188a54b01b0b59f5f9faecab0 = L.popup({maxWidth: '300'});
+
+            
+                var html_7cfc56c4b8af4fc889b36cdb84d9cb57 = $('<div id="html_7cfc56c4b8af4fc889b36cdb84d9cb57" style="width: 100.0%; height: 100.0%;">$725,000 0 Gateway Rock Springs, WY 82901</div>')[0];
+                popup_3c8dd78188a54b01b0b59f5f9faecab0.setContent(html_7cfc56c4b8af4fc889b36cdb84d9cb57);
+            
+
+            marker_9028684664264e38b3e5d02510b8e68a.bindPopup(popup_3c8dd78188a54b01b0b59f5f9faecab0);
+
+            
+        
+    
+
+            var marker_ca473a1ae7ad4fbaac60a5b021b4377c = L.marker(
+                [37.3091587,-121.9501362],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_89d207c4d265422987744a762b6422db = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ca473a1ae7ad4fbaac60a5b021b4377c.setIcon(icon_89d207c4d265422987744a762b6422db);
+            
+    
+            var popup_90b123d214b04535ada9145e3f5e40ec = L.popup({maxWidth: '300'});
+
+            
+                var html_e63d9fbe629243659cf4d15bcab16399 = $('<div id="html_e63d9fbe629243659cf4d15bcab16399" style="width: 100.0%; height: 100.0%;">$452,900 1003 Winchester Blvd. Rock Springs, WY 82901</div>')[0];
+                popup_90b123d214b04535ada9145e3f5e40ec.setContent(html_e63d9fbe629243659cf4d15bcab16399);
+            
+
+            marker_ca473a1ae7ad4fbaac60a5b021b4377c.bindPopup(popup_90b123d214b04535ada9145e3f5e40ec);
+
+            
+        
+    
+
+            var marker_973cd5de57a54875b66742d61f4a38f1 = L.marker(
+                [41.5942285,-109.2716249],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_220c605abbae404bb84ba7bc900c003b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_973cd5de57a54875b66742d61f4a38f1.setIcon(icon_220c605abbae404bb84ba7bc900c003b);
+            
+    
+            var popup_ed95d48db66a499e9230fb22c091f8a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_43403ca59be94752a081c696021d99df = $('<div id="html_43403ca59be94752a081c696021d99df" style="width: 100.0%; height: 100.0%;">$396,900 600 Talladega Rock Springs, WY 82901</div>')[0];
+                popup_ed95d48db66a499e9230fb22c091f8a0.setContent(html_43403ca59be94752a081c696021d99df);
+            
+
+            marker_973cd5de57a54875b66742d61f4a38f1.bindPopup(popup_ed95d48db66a499e9230fb22c091f8a0);
+
+            
+        
+    
+
+            var marker_0ce9a2f548644061bfd125dd5d05a091 = L.marker(
+                [41.5912357,-109.2658858],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_78f9bacacc7a4faab9fa87cbc8db0855 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0ce9a2f548644061bfd125dd5d05a091.setIcon(icon_78f9bacacc7a4faab9fa87cbc8db0855);
+            
+    
+            var popup_8cce3379070440b7a4ad8a2a0f4ff090 = L.popup({maxWidth: '300'});
+
+            
+                var html_1510aaf13476463db85197124404e5e7 = $('<div id="html_1510aaf13476463db85197124404e5e7" style="width: 100.0%; height: 100.0%;">$389,900 3239 Spearhead Way Rock Springs, WY 82901</div>')[0];
+                popup_8cce3379070440b7a4ad8a2a0f4ff090.setContent(html_1510aaf13476463db85197124404e5e7);
+            
+
+            marker_0ce9a2f548644061bfd125dd5d05a091.bindPopup(popup_8cce3379070440b7a4ad8a2a0f4ff090);
+
+            
+        
+    
+
+            var marker_8175aa973fbb4505a218641179455ef8 = L.marker(
+                [41.5834244,-109.2047247],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_9da0d538223c4d31b144476ed02cd233 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8175aa973fbb4505a218641179455ef8.setIcon(icon_9da0d538223c4d31b144476ed02cd233);
+            
+    
+            var popup_02fe9e7c132443518e4b3ca09a944139 = L.popup({maxWidth: '300'});
+
+            
+                var html_9839a982d6b54b23b8bf509759855ef0 = $('<div id="html_9839a982d6b54b23b8bf509759855ef0" style="width: 100.0%; height: 100.0%;">$254,000 522 Emerald Street Rock Springs, WY 82901</div>')[0];
+                popup_02fe9e7c132443518e4b3ca09a944139.setContent(html_9839a982d6b54b23b8bf509759855ef0);
+            
+
+            marker_8175aa973fbb4505a218641179455ef8.bindPopup(popup_02fe9e7c132443518e4b3ca09a944139);
+
+            
+        
+    
+
+            var marker_11579a0fec7f44aeaa62a55c7a7b839b = L.marker(
+                [44.75033860000001,-85.6304983],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_d66bb28525824b8686d4ab502435f841 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_11579a0fec7f44aeaa62a55c7a7b839b.setIcon(icon_d66bb28525824b8686d4ab502435f841);
+            
+    
+            var popup_1f7eb779154b43958ddf2e0826f09d42 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c06d9dd20194bb4bef9cc91a03aa944 = $('<div id="html_7c06d9dd20194bb4bef9cc91a03aa944" style="width: 100.0%; height: 100.0%;">$252,900 1302 Veteran&#39;s Drive Rock Springs, WY 82901</div>')[0];
+                popup_1f7eb779154b43958ddf2e0826f09d42.setContent(html_7c06d9dd20194bb4bef9cc91a03aa944);
+            
+
+            marker_11579a0fec7f44aeaa62a55c7a7b839b.bindPopup(popup_1f7eb779154b43958ddf2e0826f09d42);
+
+            
+        
+    
+
+            var marker_314a7aff12c140f5aed643b296c5c2e5 = L.marker(
+                [33.7845097,-79.0017841],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_877d79abdc7a4e7aa37ec3cfc412caba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_314a7aff12c140f5aed643b296c5c2e5.setIcon(icon_877d79abdc7a4e7aa37ec3cfc412caba);
+            
+    
+            var popup_5edbda99251b4ee8919e07e09637799a = L.popup({maxWidth: '300'});
+
+            
+                var html_b0d79747fa9b448980148a00b12a6be1 = $('<div id="html_b0d79747fa9b448980148a00b12a6be1" style="width: 100.0%; height: 100.0%;">$210,000 1021 Cypress Cir Rock Springs, WY 82901</div>')[0];
+                popup_5edbda99251b4ee8919e07e09637799a.setContent(html_b0d79747fa9b448980148a00b12a6be1);
+            
+
+            marker_314a7aff12c140f5aed643b296c5c2e5.bindPopup(popup_5edbda99251b4ee8919e07e09637799a);
+
+            
+        
+    
+
+            var marker_d37d7e849dc24e3dba34184f1b0549fd = L.marker(
+                [41.5977361,-109.2443079],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_c26c984ebcff4567816f49c3bb106d68 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d37d7e849dc24e3dba34184f1b0549fd.setIcon(icon_c26c984ebcff4567816f49c3bb106d68);
+            
+    
+            var popup_2a98a19606cf4b9ba7bf4d376c8f37cd = L.popup({maxWidth: '300'});
+
+            
+                var html_d5d2f7ab992941e088bfc1f3fcce5ce2 = $('<div id="html_d5d2f7ab992941e088bfc1f3fcce5ce2" style="width: 100.0%; height: 100.0%;">$209,000 913 Madison Dr Rock Springs, WY 82901</div>')[0];
+                popup_2a98a19606cf4b9ba7bf4d376c8f37cd.setContent(html_d5d2f7ab992941e088bfc1f3fcce5ce2);
+            
+
+            marker_d37d7e849dc24e3dba34184f1b0549fd.bindPopup(popup_2a98a19606cf4b9ba7bf4d376c8f37cd);
+
+            
+        
+    
+
+            var marker_70945511a05c4f2fad4c306f947de1f2 = L.marker(
+                [41.571871,-109.217532],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_30b408b409484db4b87cfc837844a9a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_70945511a05c4f2fad4c306f947de1f2.setIcon(icon_30b408b409484db4b87cfc837844a9a8);
+            
+    
+            var popup_8c32330aa40e4757a2c940ab43c1305a = L.popup({maxWidth: '300'});
+
+            
+                var html_e70753bae7f6457789252ba8e284bd99 = $('<div id="html_e70753bae7f6457789252ba8e284bd99" style="width: 100.0%; height: 100.0%;">$199,900 1344 Teton Street Rock Springs, WY 82901</div>')[0];
+                popup_8c32330aa40e4757a2c940ab43c1305a.setContent(html_e70753bae7f6457789252ba8e284bd99);
+            
+
+            marker_70945511a05c4f2fad4c306f947de1f2.bindPopup(popup_8c32330aa40e4757a2c940ab43c1305a);
+
+            
+        
+    
+
+            var marker_244a9edd6bac4ca391153622ae7c7d1b = L.marker(
+                [41.008436,-109.426455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_cce83ff14a884c029996698ece71c902 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_244a9edd6bac4ca391153622ae7c7d1b.setIcon(icon_cce83ff14a884c029996698ece71c902);
+            
+    
+            var popup_3608135c0e5740769bc2afb882217070 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea26286b8f2342678f2e7b9d7480f04a = $('<div id="html_ea26286b8f2342678f2e7b9d7480f04a" style="width: 100.0%; height: 100.0%;">$196,900 4 Minnies Lane Rock Springs, WY 82901</div>')[0];
+                popup_3608135c0e5740769bc2afb882217070.setContent(html_ea26286b8f2342678f2e7b9d7480f04a);
+            
+
+            marker_244a9edd6bac4ca391153622ae7c7d1b.bindPopup(popup_3608135c0e5740769bc2afb882217070);
+
+            
+        
+    
+
+            var marker_33eef1feef2f4f83a8cde8bf2df2d5de = L.marker(
+                [47.172003,-122.4366804],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_228fbdf048cc416c8abafc6055d17f51 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33eef1feef2f4f83a8cde8bf2df2d5de.setIcon(icon_228fbdf048cc416c8abafc6055d17f51);
+            
+    
+            var popup_8515d04cf60441cca58da89dd5b85499 = L.popup({maxWidth: '300'});
+
+            
+                var html_298b0e0ca93e48caa3e91c00342895fe = $('<div id="html_298b0e0ca93e48caa3e91c00342895fe" style="width: 100.0%; height: 100.0%;">$1,700,000 9339 Sd 26900 Rocksprings, TX 78880</div>')[0];
+                popup_8515d04cf60441cca58da89dd5b85499.setContent(html_298b0e0ca93e48caa3e91c00342895fe);
+            
+
+            marker_33eef1feef2f4f83a8cde8bf2df2d5de.bindPopup(popup_8515d04cf60441cca58da89dd5b85499);
+
+            
+        
+    
+
+            var marker_31966f9c525a420c9a4a170625a39d22 = L.marker(
+                [33.7730133,-84.4088874],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_194c5fb4ef944f8bbad23f3304364c2d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_31966f9c525a420c9a4a170625a39d22.setIcon(icon_194c5fb4ef944f8bbad23f3304364c2d);
+            
+    
+            var popup_a0bd7a6db19f4b0ab8396a8c89218bf4 = L.popup({maxWidth: '300'});
+
+            
+                var html_f1c36c94315a4abcaea584a253e462f2 = $('<div id="html_f1c36c94315a4abcaea584a253e462f2" style="width: 100.0%; height: 100.0%;">$1,080,000 0 Hwy 41 Rocksprings, TX 78880</div>')[0];
+                popup_a0bd7a6db19f4b0ab8396a8c89218bf4.setContent(html_f1c36c94315a4abcaea584a253e462f2);
+            
+
+            marker_31966f9c525a420c9a4a170625a39d22.bindPopup(popup_a0bd7a6db19f4b0ab8396a8c89218bf4);
+
+            
+        
+    
+
+            var marker_6ff6ce8a005841acbee5e62409031a1a = L.marker(
+                [47.172003,-122.4366804],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_dcead384c3cb4b9b80c93442a4b364bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ff6ce8a005841acbee5e62409031a1a.setIcon(icon_dcead384c3cb4b9b80c93442a4b364bd);
+            
+    
+            var popup_d2762cb1f4c641f3b13302a15d97715d = L.popup({maxWidth: '300'});
+
+            
+                var html_0058e54ecabf4f46b6a811e1a7349dca = $('<div id="html_0058e54ecabf4f46b6a811e1a7349dca" style="width: 100.0%; height: 100.0%;">$908,350 9339 Sd 26900 Rocksprings, TX 78880</div>')[0];
+                popup_d2762cb1f4c641f3b13302a15d97715d.setContent(html_0058e54ecabf4f46b6a811e1a7349dca);
+            
+
+            marker_6ff6ce8a005841acbee5e62409031a1a.bindPopup(popup_d2762cb1f4c641f3b13302a15d97715d);
+
+            
+        
+    
+
+            var marker_d4d30ec90c144989b83a317a5d40ca03 = L.marker(
+                [28.9310896,-81.6736925],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_5d2eab8f549b49ed81b34332ffce0bb0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4d30ec90c144989b83a317a5d40ca03.setIcon(icon_5d2eab8f549b49ed81b34332ffce0bb0);
+            
+    
+            var popup_d3e00eea1d1248168c8b1ad86e68934e = L.popup({maxWidth: '300'});
+
+            
+                var html_ecc48e2827dd40d8916044ec94bbf696 = $('<div id="html_ecc48e2827dd40d8916044ec94bbf696" style="width: 100.0%; height: 100.0%;">$905,000 CR450 Hwy 377 Rocksprings, TX 78880</div>')[0];
+                popup_d3e00eea1d1248168c8b1ad86e68934e.setContent(html_ecc48e2827dd40d8916044ec94bbf696);
+            
+
+            marker_d4d30ec90c144989b83a317a5d40ca03.bindPopup(popup_d3e00eea1d1248168c8b1ad86e68934e);
+
+            
+        
+    
+
+            var marker_3f4afb00d4aa4fa19fab224b48d3f960 = L.marker(
+                [33.783431,-93.33213599999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_e573328c9f934b4aaa47eabf9e101165 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3f4afb00d4aa4fa19fab224b48d3f960.setIcon(icon_e573328c9f934b4aaa47eabf9e101165);
+            
+    
+            var popup_edfb06781eac41e3b9e9c722b10373c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4dc85628af246b2b74ccf4216b7f15e = $('<div id="html_c4dc85628af246b2b74ccf4216b7f15e" style="width: 100.0%; height: 100.0%;">$695,000 Cr 240 Cr 240 Rocksprings, TX 78880</div>')[0];
+                popup_edfb06781eac41e3b9e9c722b10373c7.setContent(html_c4dc85628af246b2b74ccf4216b7f15e);
+            
+
+            marker_3f4afb00d4aa4fa19fab224b48d3f960.bindPopup(popup_edfb06781eac41e3b9e9c722b10373c7);
+
+            
+        
+    
+
+            var marker_0c46693d0dc9469c8a2fdac3ee435193 = L.marker(
+                [31.9396484,-84.1975619],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_93de62e4ed6040e78fbd2c1ee64ed205 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c46693d0dc9469c8a2fdac3ee435193.setIcon(icon_93de62e4ed6040e78fbd2c1ee64ed205);
+            
+    
+            var popup_f2d2d5ea841041c3819370634531d467 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c483ac401b248aeb1e258455c5ebb51 = $('<div id="html_1c483ac401b248aeb1e258455c5ebb51" style="width: 100.0%; height: 100.0%;">$605,000 RR674 Hwy 377 Rocksprings, TX 78880</div>')[0];
+                popup_f2d2d5ea841041c3819370634531d467.setContent(html_1c483ac401b248aeb1e258455c5ebb51);
+            
+
+            marker_0c46693d0dc9469c8a2fdac3ee435193.bindPopup(popup_f2d2d5ea841041c3819370634531d467);
+
+            
+        
+    
+
+            var marker_22956333a2014acebb76788ade251ad7 = L.marker(
+                [44.5868011,-97.2192425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_df9f53078cab459892e9a35c7bb3cf6b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_22956333a2014acebb76788ade251ad7.setIcon(icon_df9f53078cab459892e9a35c7bb3cf6b);
+            
+    
+            var popup_952be5e84826494bac98ca6cbd741e0f = L.popup({maxWidth: '300'});
+
+            
+                var html_d999f65e31c54490bd60ffa5512f61aa = $('<div id="html_d999f65e31c54490bd60ffa5512f61aa" style="width: 100.0%; height: 100.0%;">$559,805 9770a Sd 26900 Rocksprings, TX 78880</div>')[0];
+                popup_952be5e84826494bac98ca6cbd741e0f.setContent(html_d999f65e31c54490bd60ffa5512f61aa);
+            
+
+            marker_22956333a2014acebb76788ade251ad7.bindPopup(popup_952be5e84826494bac98ca6cbd741e0f);
+
+            
+        
+    
+
+            var marker_4d26d29ee2aa486f90e55b87a968a951 = L.marker(
+                [44.8732419,-91.9313086],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_44ca152e1c664818b466f1b3a740182b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d26d29ee2aa486f90e55b87a968a951.setIcon(icon_44ca152e1c664818b466f1b3a740182b);
+            
+    
+            var popup_bc36ad2652b34d3c9b3595eee8cd0f76 = L.popup({maxWidth: '300'});
+
+            
+                var html_4337ba733bec4aca908b6bf07f7b3b4d = $('<div id="html_4337ba733bec4aca908b6bf07f7b3b4d" style="width: 100.0%; height: 100.0%;">$504,000 Lot17 CR 2630 Rocksprings, TX 78880</div>')[0];
+                popup_bc36ad2652b34d3c9b3595eee8cd0f76.setContent(html_4337ba733bec4aca908b6bf07f7b3b4d);
+            
+
+            marker_4d26d29ee2aa486f90e55b87a968a951.bindPopup(popup_bc36ad2652b34d3c9b3595eee8cd0f76);
+
+            
+        
+    
+
+            var marker_839a1fadc72e4510ab01dcd290259aff = L.marker(
+                [34.091381,-112.119847],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_b865988a70e148198e88b9812b33ae7b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_839a1fadc72e4510ab01dcd290259aff.setIcon(icon_b865988a70e148198e88b9812b33ae7b);
+            
+    
+            var popup_0e811a1f4e0b436b90a7315a3349027f = L.popup({maxWidth: '300'});
+
+            
+                var html_c259fef7ebc5485aa661358f66224417 = $('<div id="html_c259fef7ebc5485aa661358f66224417" style="width: 100.0%; height: 100.0%;">$299,900 32575 S Shadow Mountain Road Black Canyon City, AZ 85324</div>')[0];
+                popup_0e811a1f4e0b436b90a7315a3349027f.setContent(html_c259fef7ebc5485aa661358f66224417);
+            
+
+            marker_839a1fadc72e4510ab01dcd290259aff.bindPopup(popup_0e811a1f4e0b436b90a7315a3349027f);
+
+            
+        
+    
+
+            var marker_cee7de45846e47f784d283fcc3d7b32c = L.marker(
+                [34.088301,-112.118339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_18d7a7c3f0bd4a5a961a10e274d70171 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cee7de45846e47f784d283fcc3d7b32c.setIcon(icon_18d7a7c3f0bd4a5a961a10e274d70171);
+            
+    
+            var popup_7417d49696834e24b042a9fad38e35a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e8b9ef6811f4d878b48d29e797192a2 = $('<div id="html_5e8b9ef6811f4d878b48d29e797192a2" style="width: 100.0%; height: 100.0%;">$167,500 32750 S Shangrila Drive Black Canyon City, AZ 85324</div>')[0];
+                popup_7417d49696834e24b042a9fad38e35a3.setContent(html_5e8b9ef6811f4d878b48d29e797192a2);
+            
+
+            marker_cee7de45846e47f784d283fcc3d7b32c.bindPopup(popup_7417d49696834e24b042a9fad38e35a3);
+
+            
+        
+    
+
+            var marker_e2af1614b0094446a4e1a91677b3c01c = L.marker(
+                [33.4480645,-112.1087535],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_856c7a2c0ce3437ea5624867034b498e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2af1614b0094446a4e1a91677b3c01c.setIcon(icon_856c7a2c0ce3437ea5624867034b498e);
+            
+    
+            var popup_399cda6fef22458aafef36a222052818 = L.popup({maxWidth: '300'});
+
+            
+                var html_dff3c68bf9894eef88dbf50fca40e3fd = $('<div id="html_dff3c68bf9894eef88dbf50fca40e3fd" style="width: 100.0%; height: 100.0%;">$150,000 0000 Black Canyon Highway Black Canyon City, AZ 85324</div>')[0];
+                popup_399cda6fef22458aafef36a222052818.setContent(html_dff3c68bf9894eef88dbf50fca40e3fd);
+            
+
+            marker_e2af1614b0094446a4e1a91677b3c01c.bindPopup(popup_399cda6fef22458aafef36a222052818);
+
+            
+        
+    
+
+            var marker_94196ca749604bb889316f5621308de6 = L.marker(
+                [34.0646868,-112.1354965],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_5443ccb1b6b341adbf2bb4fe9d6df5b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94196ca749604bb889316f5621308de6.setIcon(icon_5443ccb1b6b341adbf2bb4fe9d6df5b4);
+            
+    
+            var popup_b5e126c1c821495196c219b76c978f31 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a439ac065be4cada88884dc94a79aa0 = $('<div id="html_2a439ac065be4cada88884dc94a79aa0" style="width: 100.0%; height: 100.0%;">$129,500 34775 S CHOLLA Drive Black Canyon City, AZ 85324</div>')[0];
+                popup_b5e126c1c821495196c219b76c978f31.setContent(html_2a439ac065be4cada88884dc94a79aa0);
+            
+
+            marker_94196ca749604bb889316f5621308de6.bindPopup(popup_b5e126c1c821495196c219b76c978f31);
+
+            
+        
+    
+
+            var marker_53574032b9884cf6b03dc1666f7f65d3 = L.marker(
+                [34.07929,-112.12682],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_29f27fbf874c4dcb9f39ac69148ce6c1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_53574032b9884cf6b03dc1666f7f65d3.setIcon(icon_29f27fbf874c4dcb9f39ac69148ce6c1);
+            
+    
+            var popup_3b9122ca8c92448c90ab7393cdaf2ead = L.popup({maxWidth: '300'});
+
+            
+                var html_4737c40f34ef49f3b6c9684c08cb5e9f = $('<div id="html_4737c40f34ef49f3b6c9684c08cb5e9f" style="width: 100.0%; height: 100.0%;">$129,000 33403 S. HA-WA-SI TERRACE BLACK CANYON CITY, AZ 85324</div>')[0];
+                popup_3b9122ca8c92448c90ab7393cdaf2ead.setContent(html_4737c40f34ef49f3b6c9684c08cb5e9f);
+            
+
+            marker_53574032b9884cf6b03dc1666f7f65d3.bindPopup(popup_3b9122ca8c92448c90ab7393cdaf2ead);
+
+            
+        
+    
+
+            var marker_2c7abb7dbe1042ec81ac80727d72d7fd = L.marker(
+                [34.0674459,-112.154224],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_92ae7c51e0c5419081597fca32c947a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c7abb7dbe1042ec81ac80727d72d7fd.setIcon(icon_92ae7c51e0c5419081597fca32c947a8);
+            
+    
+            var popup_82e56fdfa9494c2bab6cdba64a8cc69d = L.popup({maxWidth: '300'});
+
+            
+                var html_71e09b91d2b3418aa618fd0ad7b67dd9 = $('<div id="html_71e09b91d2b3418aa618fd0ad7b67dd9" style="width: 100.0%; height: 100.0%;">$80,000 34263 S Bertha Street Black Canyon City, AZ 85324</div>')[0];
+                popup_82e56fdfa9494c2bab6cdba64a8cc69d.setContent(html_71e09b91d2b3418aa618fd0ad7b67dd9);
+            
+
+            marker_2c7abb7dbe1042ec81ac80727d72d7fd.bindPopup(popup_82e56fdfa9494c2bab6cdba64a8cc69d);
+
+            
+        
+    
+
+            var marker_9c17da22dbef4b9d8219aa42ca713699 = L.marker(
+                [39.5833535,-109.2414833],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_744ef0d7beac48bab665f9caaa27a480 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c17da22dbef4b9d8219aa42ca713699.setIcon(icon_744ef0d7beac48bab665f9caaa27a480);
+            
+    
+            var popup_148ae66921cc48428eb7b5ea1705cd22 = L.popup({maxWidth: '300'});
+
+            
+                var html_73b3cfe7d0ac40bf9131111056356b31 = $('<div id="html_73b3cfe7d0ac40bf9131111056356b31" style="width: 100.0%; height: 100.0%;">$77,900 33160 S Canyon Road Black Canyon City, AZ 85324</div>')[0];
+                popup_148ae66921cc48428eb7b5ea1705cd22.setContent(html_73b3cfe7d0ac40bf9131111056356b31);
+            
+
+            marker_9c17da22dbef4b9d8219aa42ca713699.bindPopup(popup_148ae66921cc48428eb7b5ea1705cd22);
+
+            
+        
+    
+
+            var marker_459eb262570145a7a60d25657287298c = L.marker(
+                [34.070015,-112.144257],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_503f3fa7d75d4cc280b29ba0c1764ad1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_459eb262570145a7a60d25657287298c.setIcon(icon_503f3fa7d75d4cc280b29ba0c1764ad1);
+            
+    
+            var popup_d2d62dfdf24740f5b5c17fd7defd9b85 = L.popup({maxWidth: '300'});
+
+            
+                var html_33da0c90c8a445459af89c478bccacf4 = $('<div id="html_33da0c90c8a445459af89c478bccacf4" style="width: 100.0%; height: 100.0%;">$70,500 19421 E Todd Evans Road Black Canyon City, AZ 85324</div>')[0];
+                popup_d2d62dfdf24740f5b5c17fd7defd9b85.setContent(html_33da0c90c8a445459af89c478bccacf4);
+            
+
+            marker_459eb262570145a7a60d25657287298c.bindPopup(popup_d2d62dfdf24740f5b5c17fd7defd9b85);
+
+            
+        
+    
+
+            var marker_fe61902bf56b48bca30a98de210dd9f5 = L.marker(
+                [33.365154,-111.4335506],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_722f4dcfcfb34fc7ae751976119e3cba = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fe61902bf56b48bca30a98de210dd9f5.setIcon(icon_722f4dcfcfb34fc7ae751976119e3cba);
+            
+    
+            var popup_b2479cf38f5048aa9fade2d451d43ce9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3fa32c2b92fb4b6c8001eb3ccd0ed009 = $('<div id="html_3fa32c2b92fb4b6c8001eb3ccd0ed009" style="width: 100.0%; height: 100.0%;">$70,000 18688 E AGUA Vista Black Canyon City, AZ 85324</div>')[0];
+                popup_b2479cf38f5048aa9fade2d451d43ce9.setContent(html_3fa32c2b92fb4b6c8001eb3ccd0ed009);
+            
+
+            marker_fe61902bf56b48bca30a98de210dd9f5.bindPopup(popup_b2479cf38f5048aa9fade2d451d43ce9);
+
+            
+        
+    
+
+            var marker_a66ead0a7f8a47ae8e8b0554070c7280 = L.marker(
+                [33.9096975,-112.1417728],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_9e424ba5e50546c09f2ccfdc726eb974 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a66ead0a7f8a47ae8e8b0554070c7280.setIcon(icon_9e424ba5e50546c09f2ccfdc726eb974);
+            
+    
+            var popup_b7d9872ddf9f4c0a8bd0f5c6351c1a1e = L.popup({maxWidth: '300'});
+
+            
+                var html_33a91893b72d4e68b78b41a2821ab359 = $('<div id="html_33a91893b72d4e68b78b41a2821ab359" style="width: 100.0%; height: 100.0%;">$67,500 50600 N Old Black Canyon Road Black Canyon City, AZ 85324</div>')[0];
+                popup_b7d9872ddf9f4c0a8bd0f5c6351c1a1e.setContent(html_33a91893b72d4e68b78b41a2821ab359);
+            
+
+            marker_a66ead0a7f8a47ae8e8b0554070c7280.bindPopup(popup_b7d9872ddf9f4c0a8bd0f5c6351c1a1e);
+
+            
+        
+    
+
+            var marker_fbd4ee6346384e6992ec75930e8e67a7 = L.marker(
+                [34.0775552,-112.124789],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_6dc0e87cc2f3446fa4fee2ac3021b32b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fbd4ee6346384e6992ec75930e8e67a7.setIcon(icon_6dc0e87cc2f3446fa4fee2ac3021b32b);
+            
+    
+            var popup_d3eff94a94e44d09a22319849301a590 = L.popup({maxWidth: '300'});
+
+            
+                var html_0af6307e5ec64cecae5b708c967b39d3 = $('<div id="html_0af6307e5ec64cecae5b708c967b39d3" style="width: 100.0%; height: 100.0%;">$54,900 20101 E SQUAW VALLEY Road Black Canyon City, AZ 85324</div>')[0];
+                popup_d3eff94a94e44d09a22319849301a590.setContent(html_0af6307e5ec64cecae5b708c967b39d3);
+            
+
+            marker_fbd4ee6346384e6992ec75930e8e67a7.bindPopup(popup_d3eff94a94e44d09a22319849301a590);
+
+            
+        
+    
+
+            var marker_ab45ec19f3d54c7d9803425720e8fb9e = L.marker(
+                [39.5833535,-109.2414833],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_3fd488cf07e8477a833ee507fb5efa9b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab45ec19f3d54c7d9803425720e8fb9e.setIcon(icon_3fd488cf07e8477a833ee507fb5efa9b);
+            
+    
+            var popup_7ecbee1f7cb043b0983151f1161e98ec = L.popup({maxWidth: '300'});
+
+            
+                var html_701fe63db69845519045b29dc80546b9 = $('<div id="html_701fe63db69845519045b29dc80546b9" style="width: 100.0%; height: 100.0%;">$45,600 33259 S Canyon Road Black Canyon City, AZ 85324</div>')[0];
+                popup_7ecbee1f7cb043b0983151f1161e98ec.setContent(html_701fe63db69845519045b29dc80546b9);
+            
+
+            marker_ab45ec19f3d54c7d9803425720e8fb9e.bindPopup(popup_7ecbee1f7cb043b0983151f1161e98ec);
+
+            
+        
+    
+
+            var marker_3398f1aa63ad4bdd8f346ae45c88a6a0 = L.marker(
+                [34.6117016,-113.8394749],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_fb73e4e0e5c64c388e637a0e6387e7a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3398f1aa63ad4bdd8f346ae45c88a6a0.setIcon(icon_fb73e4e0e5c64c388e637a0e6387e7a1);
+            
+    
+            var popup_9ab0946520e241509fce1399dc443a54 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ab20057dcd44ce5a29dffe3e9e98d80 = $('<div id="html_8ab20057dcd44ce5a29dffe3e9e98d80" style="width: 100.0%; height: 100.0%;">$40,000 34558 S ROADRUNNER RD Black Canyon City, AZ 85324</div>')[0];
+                popup_9ab0946520e241509fce1399dc443a54.setContent(html_8ab20057dcd44ce5a29dffe3e9e98d80);
+            
+
+            marker_3398f1aa63ad4bdd8f346ae45c88a6a0.bindPopup(popup_9ab0946520e241509fce1399dc443a54);
+
+            
+        
+    
+
+            var marker_9191d0bd83744c5493faecce2e4d0ad6 = L.marker(
+                [29.6215781,-98.68504750000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_67cc2468e7a1498fbe5078202299c0a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9191d0bd83744c5493faecce2e4d0ad6.setIcon(icon_67cc2468e7a1498fbe5078202299c0a8);
+            
+    
+            var popup_2d10c8371ac749f8a75023b3e67aee66 = L.popup({maxWidth: '300'});
+
+            
+                var html_5b3db437d949479ea0de91a842a6c12a = $('<div id="html_5b3db437d949479ea0de91a842a6c12a" style="width: 100.0%; height: 100.0%;">$30,000 19260 E Scenic Loop Road Black Canyon City, AZ 85324</div>')[0];
+                popup_2d10c8371ac749f8a75023b3e67aee66.setContent(html_5b3db437d949479ea0de91a842a6c12a);
+            
+
+            marker_9191d0bd83744c5493faecce2e4d0ad6.bindPopup(popup_2d10c8371ac749f8a75023b3e67aee66);
+
+            
+        
+    
+
+            var marker_e42557dbd23f4a86b9c0639c82c43986 = L.marker(
+                [34.091818,-112.151698],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_729b6c9317e3486cabfb3ab750164da4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e42557dbd23f4a86b9c0639c82c43986.setIcon(icon_729b6c9317e3486cabfb3ab750164da4);
+            
+    
+            var popup_d272026f832547149b716fc97636a3ab = L.popup({maxWidth: '300'});
+
+            
+                var html_3479227dab3d4218abc3afd0ea826dde = $('<div id="html_3479227dab3d4218abc3afd0ea826dde" style="width: 100.0%; height: 100.0%;">$29,000 19000 E MAREN Avenue Black Canyon City, AZ 85324</div>')[0];
+                popup_d272026f832547149b716fc97636a3ab.setContent(html_3479227dab3d4218abc3afd0ea826dde);
+            
+
+            marker_e42557dbd23f4a86b9c0639c82c43986.bindPopup(popup_d272026f832547149b716fc97636a3ab);
+
+            
+        
+    
+
+            var marker_0f2ee7781592401b88e963d849a28ee1 = L.marker(
+                [34.3216564,-112.1115625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_ce9f42db5f914bcfa9ad9c9c17226d24 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f2ee7781592401b88e963d849a28ee1.setIcon(icon_ce9f42db5f914bcfa9ad9c9c17226d24);
+            
+    
+            var popup_a3704c4ff9d44e4084bc840aa907328d = L.popup({maxWidth: '300'});
+
+            
+                var html_d5c32d31d5f74ab7a8c325fdfa85f96d = $('<div id="html_d5c32d31d5f74ab7a8c325fdfa85f96d" style="width: 100.0%; height: 100.0%;">$28,995 19350 E SAGUARO Drive Black Canyon City, AZ 85324</div>')[0];
+                popup_a3704c4ff9d44e4084bc840aa907328d.setContent(html_d5c32d31d5f74ab7a8c325fdfa85f96d);
+            
+
+            marker_0f2ee7781592401b88e963d849a28ee1.bindPopup(popup_a3704c4ff9d44e4084bc840aa907328d);
+
+            
+        
+    
+
+            var marker_2c0825bcebb145e0bcdd37883dbdbd45 = L.marker(
+                [34.0759686,-112.122859],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_d316d7c205d643a18ad4868739a01ab0);
+            
+    
+
+                var icon_d60a6f187fc34df3a241fa988bc393d3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c0825bcebb145e0bcdd37883dbdbd45.setIcon(icon_d60a6f187fc34df3a241fa988bc393d3);
+            
+    
+            var popup_581a2cf2973c4f6ba340750cca021ebd = L.popup({maxWidth: '300'});
+
+            
+                var html_6ec67f24a2824b32a510e29539447d6f = $('<div id="html_6ec67f24a2824b32a510e29539447d6f" style="width: 100.0%; height: 100.0%;">$15,000 20650 E Amethyst Place Black Canyon City, AZ 85324</div>')[0];
+                popup_581a2cf2973c4f6ba340750cca021ebd.setContent(html_6ec67f24a2824b32a510e29539447d6f);
+            
+
+            marker_2c0825bcebb145e0bcdd37883dbdbd45.bindPopup(popup_581a2cf2973c4f6ba340750cca021ebd);
+
+            
+        
+    
+            var layer_control_20aad9f464184cf7b817a2897d4aca0d = {
+                base_layers : { "mapboxbright" : tile_layer_f8db02451010497d97fc073aea9fdf85, },
+                overlays : { "Marker Layer" : feature_group_d316d7c205d643a18ad4868739a01ab0, }
+                };
+            L.control.layers(
+                layer_control_20aad9f464184cf7b817a2897d4aca0d.base_layers,
+                layer_control_20aad9f464184cf7b817a2897d4aca0d.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_086354a045d84502a36df00d2942d57e);
+        
+</script>
